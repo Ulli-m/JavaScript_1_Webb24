@@ -157,7 +157,67 @@ let jämnTal =(array) =>{
 
   console.log(stringToUpperCase("vilken underbar dag"));
 
+/* ● Skapa en funktion summeraArray som tar en array av tal som argument och
+returnerar summan av alla tal i arrayen.*/
 
+let summeraArray=(array)=>{
+
+    let summ = 0;
+ 
+    for( let i = 0; i < array.length; i++){
+ 
+     summ = summ + array[i];
+    }
+ 
+    return summ ;
+ }
+ 
+ let array2 = [10,20,30,40,50,60,70,80,90];
+ console.log( " summan av array är " + summeraArray(array2));
+ 
+
+/*● Skapa en funktion filtreraPositiva som tar en array av tal som argument och
+returnerar en ny array med endast de positiva talen.*/
+
+let filtreraPositiva=(arrayTal)=>{
+
+    let positivaTal = [];
+
+    for(let i = 0; i < arrayTal.length; i++){
+
+        if( arrayTal[i] > 0){
+            positivaTal.push(arrayTal[i]);
+        }
+    }
+        return positivaTal;
+}
+let talen = [-9,3,-4,6,-7,8,-11,12,14];
+console.log(filtreraPositiva(talen));
+
+
+
+
+function add2(a){
+    return a + 2; 
+}
+function multiply5(a){
+    return a * 5; // 12 * 5 = 60
+}
+
+let result2 = multiply5(add2(10)); 
+
+console.log(result2);
+
+//
+
+let text = " this is a text".toUpperCase();
+let textReplace = text.replace("this ", "that ");
+let textReverse = textReplace.concat (" new text added");
+console.log(textReverse);
+
+let text2 = " this is another text".toUpperCase().replace().charAt(" THAT,that").concat( "new text added");
+
+console.log(text2);
 
 
 
